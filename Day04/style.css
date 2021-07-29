@@ -1,0 +1,74 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template:
+        "header content" 1fr
+        "nav footer" 1fr / 1fr 1fr;
+}
+
+.header {
+    background-color: #DAE7DE;
+    grid-area: header;
+    color: #F44506;
+}
+.content {
+    background-color: #008A69;
+    grid-area: content;
+    color: white;
+}
+.nav {
+    background-color: #F44607;
+    grid-area: nav;
+    color: white;
+}
+.footer {
+    display: grid;
+    grid-area: footer;
+    grid-template:
+        "header_1 content_1" 1fr
+        "nav_1 footer_1" 1fr / 1fr 1fr;
+}
+
+.header_1 {
+    background-color: #F7ABC5;
+    grid-area: header_1;
+    color: #F44506;
+}
+.content_1 {
+    background-color: #5F5FA9;
+    grid-area: content_1;
+    color: white;
+}
+.nav_1 {
+    background-color: #FFC128;
+    grid-area: nav_1;
+    color: #F44506;
+}
+.footer_1 {
+    background-color: #F97374;
+    grid-area: footer_1;
+    color: white;
+}
+
+.header, .content, .nav, .footer,
+.header_1, .content_1, .nav_1, .footer_1{
+    text-align: center;
+    font-weight: 500;
+    line-height: 25vh;
+    font-size: 30px;
+}
+
+.header, .content, .nav, .footer{
+    line-height: 50vh;
+    font-size: 50px;
+}
