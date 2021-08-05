@@ -1,0 +1,63 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.select{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(300px, 1fr));
+    width: 100%;
+    height: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    width: 100%;
+    height: 80vh;
+}
+.component{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    height: 30vh;
+}
+.title, .footer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+img{
+    width: 80%;
+    height: 60%;
+}
+
+h1{
+    font-weight: 500;
+}
+
+a{
+    color: black;
+}
