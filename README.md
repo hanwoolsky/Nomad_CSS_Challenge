@@ -1,5 +1,5 @@
 # Nomad_CSS_Challenge
-In this challenge, cloned a website design that used 'grid'(css) a lot.
+In this challenge, I cloned a website design that used 'grid'(css) a lot.
 
 ## Day2
 <img height="800" alt="Day2" src="./README_FILES/Day02.png" />
